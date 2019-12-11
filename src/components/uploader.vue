@@ -26,8 +26,10 @@
 
         this.$eventBus.$emit('start-upload')
 
+        const type = this.record.blob.type.split('/')[1]
+
         const data = new FormData()
-        data.append('audio', this.record.blob, `${this.filename}.mp3`)
+        data.append('audio', this.record.blob, `${this.filename}.${type}`)
 
         const headers = Object.assign(this.headers, {})
         headers['Content-Type'] = `multipart/form-data; boundary=${data._boundary}`

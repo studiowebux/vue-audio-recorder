@@ -1,5 +1,7 @@
 # vue-audio-recorder
 
+> This is a fork of the original recorder.
+
 > Audio recorder for Vue.js. It allows to create, play, download and store records on a server.
 
 #### [Live demo](https://jsfiddle.net/grishkovelli/rb1anxyj/)
